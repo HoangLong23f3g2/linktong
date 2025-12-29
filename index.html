@@ -73,12 +73,19 @@
             border: 1px solid #e5e7eb;
         }
 
-        /* Hiệu ứng khi di chuột (cho Desktop) */
-        .link-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-            background-color: #f9fafb;
-        }
+        /* Hiệu ứng khi rê chuột (Desktop) */
+		.link-card:hover {
+			background-color: var(--primary-color); /* Đổi sang màu xanh đậm */
+			color: #ffffff; /* Chữ chuyển sang trắng để nổi bật */
+			transform: translateY(-5px) scale(1.02); /* Bay cao hơn và phóng to nhẹ */
+			box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3); /* Đổ bóng có màu xanh loang ra */
+			border-color: var(--primary-color);
+		}
+
+		/* Thêm hiệu ứng mượt mà cho cả chữ và nền */
+		.link-card {
+			transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+		}
 
         /* Footer */
         footer {
@@ -95,8 +102,8 @@
         <p class="bio">Chào mừng Quý Thầy đến với trang tổng hợp liên kết của mình. Hãy chọn một mục bên dưới!</p>
 
         <div class="links-container">
-            <a href="https://tungkinh-psi.vercel.app/" class="link-card">TỤNG KINH</a>
-            <a href="https://atgtpq-th8v.vercel.app/" class="link-card">AN TOÀN GIAO THÔNG</a>
+            <a href="https://tungkinh-psi.vercel.app/" class="link-card">📘 TỤNG KINH</a>
+            <a href="https://atgtpq-th8v.vercel.app/" class="link-card">🚘 AN TOÀN GIAO THÔNG</a>
             <a href="TUOITRE.VN" class="link-card">LINK 1</a>
             <a href="TUOITRE.VN" class="link-card">LINK 1</a>
             <a href="TUOITRE.VN" class="link-card">LINK 1</a>
