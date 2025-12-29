@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Liên Kết Của Tôi</title>
+    <style>
+        /* Thiết lập cơ bản */
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f3f4f6;
+            --text-color: #1f2937;
+            --button-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px; /* Độ rộng tối ưu cho cả mobile và desktop */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Profile Section */
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 16px;
+            border: 3px solid white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        p.bio {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-bottom: 32px;
+        }
+
+        /* Links Section */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-card {
+            background-color: var(--button-bg);
+            padding: 16px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid #e5e7eb;
+        }
+
+        /* Hiệu ứng khi di chuột (cho Desktop) */
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            background-color: #f9fafb;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>LINK TỔNG</h1>
+        <p class="bio">Chào mừng Quý Thầy đến với trang tổng hợp liên kết của mình. Hãy chọn một mục bên dưới!</p>
+
+        <div class="links-container">
+            <a href="https://tungkinh-psi.vercel.app/" class="link-card">TỤNG KINH</a>
+            <a href="https://atgtpq-th8v.vercel.app/" class="link-card">AN TOÀN GIAO THÔNG</a>
+            <a href="TUOITRE.VN" class="link-card">LINK 1</a>
+            <a href="TUOITRE.VN" class="link-card">LINK 1</a>
+            <a href="TUOITRE.VN" class="link-card">LINK 1</a>
+        </div>
+
+        <footer>
+            &copy; 2025 - Thiết kế bởi Gemini
+        </footer>
+    </div>
+
+</body>
+</html>
