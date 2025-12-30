@@ -27,20 +27,9 @@
 
         .container {
             width: 100%;
-            max-width: 500px; /* Độ rộng tối ưu cho cả mobile và desktop */
+            max-width: 500px;
             padding: 40px 20px;
             text-align: center;
-        }
-
-        /* Profile Section */
-        .profile-img {
-            width: 96px;
-            height: 96px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 16px;
-            border: 3px solid white;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         h1 {
@@ -68,26 +57,21 @@
             text-decoration: none;
             color: var(--text-color);
             font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             border: 1px solid #e5e7eb;
+            /* Hiệu ứng mượt mà cho cả chữ và nền */
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
         /* Hiệu ứng khi rê chuột (Desktop) */
 		.link-card:hover {
-			background-color: var(--primary-color); /* Đổi sang màu xanh đậm */
-			color: #ffffff; /* Chữ chuyển sang trắng để nổi bật */
-			transform: translateY(-5px) scale(1.02); /* Bay cao hơn và phóng to nhẹ */
-			box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3); /* Đổ bóng có màu xanh loang ra */
+			background-color: var(--primary-color);
+			color: #ffffff;
+			transform: translateY(-5px) scale(1.02);
+			box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
 			border-color: var(--primary-color);
 		}
 
-		/* Thêm hiệu ứng mượt mà cho cả chữ và nền */
-		.link-card {
-			transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-		}
-
-        /* Footer */
         footer {
             margin-top: 50px;
             font-size: 0.8rem;
@@ -102,19 +86,19 @@
         <p class="bio">Chào mừng Quý Thầy đến với trang tổng hợp liên kết. Hãy chọn một mục bên dưới!</p>
 
         <div class="links-container">
-            <a href="https://danhba-six.vercel.app/" class="link-card">📞 DANH BẠ</a>
-			<a href="https://tungkinh-psi.vercel.app/" class="link-card">📘 TỤNG KINH</a>
-            <a href="https://atgtpq-th8v.vercel.app/" class="link-card">🚘 AN TOÀN GIAO THÔNG</a>
-			<a href="https://giaoly.vercel.app/" class="link-card">💡 TRA CỨU BÀI GIẢNG</a>
-			<a href="TUOITRE.VN" class="link-card">LINK 1</a>
-			<a href="TUOITRE.VN" class="link-card">LINK 1</a>
-			<a href="TUOITRE.VN" class="link-card">LINK 1</a>
-			<a href="TUOITRE.VN" class="link-card">LINK 1</a>
-			<a href="TUOITRE.VN" class="link-card">LINK 1</a>
-			<a href="TUOITRE.VN" class="link-card">LINK 1</a>
-            <a href="TUOITRE.VN" class="link-card">LINK 1</a>
-            <a href="TUOITRE.VN" class="link-card">LINK 1</a>
-			<a href="https://pheptinh-ruddy.vercel.app/" class="link-card">💻 PHÉP TÍNH</a>
+            <a href="https://danhba-six.vercel.app/" class="link-card" target="_blank" rel="noopener noreferrer">📞 DANH BẠ</a>
+            <a href="https://tungkinh-psi.vercel.app/" class="link-card" target="_blank" rel="noopener noreferrer">📘 TỤNG KINH</a>
+            <a href="https://atgtpq-th8v.vercel.app/" class="link-card" target="_blank" rel="noopener noreferrer">🚘 AN TOÀN GIAO THÔNG</a>
+            <a href="https://giaoly.vercel.app/" class="link-card" target="_blank" rel="noopener noreferrer">💡 TRA CỨU BÀI GIẢNG</a>
+            
+            <a href="https://tuoitre.vn" class="link-card" target="_blank" rel="noopener noreferrer">📰 TIN TỨC 1</a>
+            <a href="https://tuoitre.vn" class="link-card" target="_blank" rel="noopener noreferrer">📰 TIN TỨC 2</a>
+            <a href="https://tuoitre.vn" class="link-card" target="_blank" rel="noopener noreferrer">📰 TIN TỨC 3</a>
+            <a href="https://tuoitre.vn" class="link-card" target="_blank" rel="noopener noreferrer">📰 TIN TỨC 4</a>
+            <a href="https://tuoitre.vn" class="link-card" target="_blank" rel="noopener noreferrer">📰 TIN TỨC 5</a>
+            <a href="https://tuoitre.vn" class="link-card" target="_blank" rel="noopener noreferrer">📰 TIN TỨC 6</a>
+            
+            <a href="https://pheptinh-ruddy.vercel.app/" class="link-card" target="_blank" rel="noopener noreferrer">💻 PHÉP TÍNH</a>
         </div>
 
         <footer>
